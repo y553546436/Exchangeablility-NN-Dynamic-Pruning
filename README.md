@@ -18,7 +18,7 @@ The last command trains resnet18 and vgg11-bn on CIFAR10 dataset. It also prunes
 In order to evaluate on OPT language model, we adapt the HuggingFace implementation of OPT by adding ExPrune optimization and code to record FLOPs.
 
 The following steps install our customized `transformers` python module.
-1. Download the adapted code at `https://anonymous.4open.science/r/transformers-DB8D/`.
+1. Download the adapted code at `https://github.com/y553546436/transformers-for-exchangeable-NN`.
 2. Run `pip install .` (build from source).
 
 We only changed `src/transformers/models/opt/modeling_opt.py` to insert `my_eval` and `gather_flops` methods.
